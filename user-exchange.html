@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>汽车商城</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link href="css/global.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/tabs.js"></script>
+</head>
+
+<body>
+<!--顶部-->
+<div class="com-header">
+  <div class="return"><a href="javascript:history.go(-1)"><i class="iconfont">&#xe624;</i></a></div>
+  <div class="header-title">兑换专区</div>
+</div>
+<div class="header-h"></div>
+<!--顶部:over--> 
+<div class="change">
+ <div class="change-top">
+  <strong>兑换服务</strong><a href="exchange-record.html">兑换记录<i class="icon">&#xe624;</i></a>
+ </div>
+ <div class="change-bottom">
+  <ul>
+   <li><a href="javascript:;" onClick="change_show()"><img src="images/icon-xc.png"><p>洗车</p></a></li>
+   <li><a href="javascript:;" onClick="change_show()"><img src="images/icon-tc.png"><p>拖车</p></a></li>
+   <li><a href="javascript:;" onClick="change_show()"><img src="images/icon-zc.png"><p>租车</p></a></li>
+   <li><a href="javascript:;" onClick="change_show()"><img src="images/icon-mfyy.png"><p>免费运油</p></a></li>
+   <li><a href="javascript:;" onClick="change_show()"><img src="images/icon-qcmr.png"><p>汽车美容</p></a></li>
+   <li><a href="javascript:;" onClick="change_show()"><img src="images/icon-cxdb.png"><p>车险代办</p></a></li>
+  </ul>
+ </div>
+</div>
+ <!--兑换弹窗-->
+ <div class="change-dialog" id="change-light">
+  <div class="change-dialog-top">
+   <h3>兑换码：<strong>AXS123456</strong></h3>
+   <p>(请向店员展示您的兑换码)</p>
+  </div>
+  <div class="change-dialog-bottom">
+   <input type="button" class="btn-no" value="取消" onClick="change_hide()">
+   <input type="button" class="btn-ok" value="确定" >
+  </div>
+ </div>
+ <div class="black" id="change-fade"></div>
+ <script>
+  var id_light = document.getElementById('change-light');
+  var id_black = document.getElementById('change-fade');
+  function change_show(){
+	   id_light.style.display='block';
+	   id_black.style.display='block';
+	  }
+  function change_hide(){
+	   id_light.style.display='none';
+	   id_black.style.display='none';
+	  }
+ </script>
+ <!--兑换弹窗:over-->
+
+</body>
+</html>

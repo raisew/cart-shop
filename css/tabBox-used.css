@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+.tabBox-hd-h{ width:100%; height:1.9rem; overflow:hidden;}
+.tabBox { width: 100%; margin:0; }
+.tabBox .hd { width: 100%; height: 1.9rem; border-bottom: 1px solid #dddddd; background-color: #fff; position:fixed; top:2.15rem; left:0; z-index:2;}
+.tabBox .hd ul { width: 100%; }
+.tabBox .hd ul li { width: 33.33%; height: 1.9rem; display: block; float: left; }
+.tabBox .hd ul li a { width: 99%; height: 1.2rem; display: block; text-align: center; line-height: 1.2rem; margin: 0.35rem 0;  font-size: 0.6rem; color: #333; border-right: 1px #c8c8c8 solid;}
+.tabBox .hd ul li.on { height: 1.9rem; border-bottom: 0.1rem #009ad9 solid; }
+.tabBox .hd ul li.on a { color: #009ad9; }
+.tabBox .bd { width: 100%; }
+.tabBox .bd ul { width: 100%; padding-bottom: 0.375rem; overflow: hidden;}
+.tabBox .bd li{ width:100%; display:block; overflow:hidden; margin-top:0.375rem;}
+.tabBox .bd li a{ width:100%; display:block; overflow:hidden; padding: 0.5rem 0; background-color: #fff;}
+.tabBox .bd li a .used-img{ width: 5.25rem; height: 3.5rem; overflow: hidden; float: left; margin-left: 0.5rem; text-align: center; vertical-align: middle;}
+.tabBox .bd li a .used-img span{ height: 100%; display: inline-block; vertical-align: middle;}
+.tabBox .bd li a .used-img img{ max-width: 100%; max-height: 100%; vertical-align: middle;}
+.tabBox .bd li a .used-div{ width: 9.3rem; height: 3.5rem; overflow: hidden; float: left; margin-left: 0.5rem; position: relative;}
+.tabBox .bd li a .used-div h3{ width: 9.3rem; max-height: 1.8rem; overflow: hidden; font-size: 0.65rem; color: #383838; line-break: 0.9rem;}
+.tabBox .bd li a .used-div p{ font: 0.55rem; color: #9c9c9c; padding-top: 0.1rem;}
+.tabBox .bd li a .used-div .used-price{ width: 9.3rem; height: 1rem; background-color: #fff; overflow: hidden; position: absolute; bottom: 0; left: 0; font-size: 0.5rem; color: #ff0000; line-height: 1rem;}
+.tabBox .bd li a .used-div .used-price span{ font-size: 0.75rem;}
+.tabBox .hd .sx-btn{width: 33.33%; height: 1.9rem; display: block; float: left; border: none; background: none; cursor: pointer; font-size: 0.6rem; color: #333; text-align: center; }

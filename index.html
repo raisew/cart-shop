@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>汽车商城</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link href="css/global.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/tabs.js"></script>
+</head>
+
+<body class="bc-f0f0f0">
+ <!--顶部-->
+ <div class="ind-header">
+  <div class="logo"><a href="#"><img src="images/logo.png" alt="易车E族"></a></div>
+  <div class="local">
+   <a href="#"><i class="iconfont">&#xe614;</i> 福州</a>
+  </div>
+ </div>
+ <div class="header-h"></div>
+ <div class="ind-user">
+  <div class="tx"><a href="#"><img src="images/user-tx.png"></a></div>
+  <div class="hy">
+   <h3>听说昵称越长越牛逼 <img src="images/icon-vip.png"><span>普通会员</span></h3>
+   <p>(温馨提示：XXX就可升级金牌会员)</p>
+  </div>
+ </div>
+ <!--顶部:over-->
+ <!--会员享受服务-->
+ <div class="ind-serve">
+  <div class="ind-serve-top">
+   <div id="con_one_1" class="hover">
+    <div class="serve-pthy gradual">
+     <ul>
+      <li><strong>免费洗车<label>（20次/年）</label></strong><span>已用<label class="cl-009ad9">12</label>次，剩余<label class="cl-f11b1b">8</label>次</span></li>
+      <li><strong>免费拖车<label>（20次/年）</label></strong><span>已用<label class="cl-009ad9">11</label>次，剩余<label class="cl-f11b1b">9</label>次</span></li>
+      <li><strong>本城免费接送<label>（20次/年）</label></strong><span>已用<label class="cl-009ad9">2</label>次，剩余<label class="cl-f11b1b">18</label>次</span></li>
+      <li><strong>免费送油<label>（20次/年）</label></strong><span>已用<label class="cl-009ad9">1</label>次，剩余<label class="cl-f11b1b">19</label>次</span></li>
+     </ul>
+    </div>
+   </div>
+   <div id="con_one_2" style="display:none">
+    <div class="serve-jphy gradual">
+     <ul>
+      <li><strong>免费洗车<label>（40次/年）</label></strong></li>
+      <li><strong>免费拖车<label>（40次/年）</label></strong></li>
+      <li><strong>本城免费接送<label>（60次/年）</label></strong></li>
+      <li><strong>免费送油<label>（40次/年）</label></strong></li>
+     </ul>
+    </div>
+   </div>
+  </div>
+  <div class="ind-serve-bottom">
+   <ul>
+    <li id="one1" onclick="setTab('one',1,2)"  class="hover">普通会员可享受服务</li>
+    <li id="one2" onclick="setTab('one',2,2)" >金牌会员可享受服务</li>
+   </ul>
+  </div>
+ </div>
+ <!--会员享受服务:over-->
+ <!--图标-->
+ <link rel="stylesheet" href="css/swiper.min.css">
+ <div class="ind-menu">
+  <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+             <ul>
+              <li><a href="#"><img src="images/icon-xc.png" alt="洗车"><p>洗车</p></a></li>
+              <li><a href="#"><img src="images/icon-tc.png" alt="拖车"><p>拖车</p></a></li>
+              <li><a href="#"><img src="images/icon-zc.png" alt="租车"><p>租车</p></a></li>
+              <li><a href="#"><img src="images/icon-wx.png" alt="维修"><p>维修</p></a></li>
+              <li><a href="#"><img src="images/icon-mfyy.png" alt="免费云油"><p>免费运油</p></a></li>
+              <li><a href="#"><img src="images/icon-qcmr.png" alt="汽车美容"><p>汽车美容</p></a></li>
+              <li><a href="#"><img src="images/icon-cxdb.png" alt="车险代办"><p>车险代办</p></a></li>
+              <li><a href="#"><img src="images/icon-jptj.png" alt="精品推荐"><p>精品推荐</p></a></li>
+             </ul>
+            </div>
+            <div class="swiper-slide">
+             <ul>
+              <li><a href="#"><img src="images/icon-xc.png" alt="洗车"><p>洗车</p></a></li>
+              <li><a href="#"><img src="images/icon-tc.png" alt="拖车"><p>拖车</p></a></li>
+              <li><a href="#"><img src="images/icon-zc.png" alt="租车"><p>租车</p></a></li>
+              <li><a href="#"><img src="images/icon-wx.png" alt="维修"><p>维修</p></a></li>
+              <li><a href="#"><img src="images/icon-mfyy.png" alt="免费云油"><p>免费运油</p></a></li>
+              <li><a href="#"><img src="images/icon-qcmr.png" alt="汽车美容"><p>汽车美容</p></a></li>
+              <li><a href="#"><img src="images/icon-cxdb.png" alt="车险代办"><p>车险代办</p></a></li>
+              <li><a href="#"><img src="images/icon-jptj.png" alt="精品推荐"><p>精品推荐</p></a></li>
+             </ul>
+            </div>
+            <div class="swiper-slide">
+             <ul>
+              <li><a href="#"><img src="images/icon-xc.png" alt="洗车"><p>洗车</p></a></li>
+              <li><a href="#"><img src="images/icon-tc.png" alt="拖车"><p>拖车</p></a></li>
+              <li><a href="#"><img src="images/icon-zc.png" alt="租车"><p>租车</p></a></li>
+              <li><a href="#"><img src="images/icon-wx.png" alt="维修"><p>维修</p></a></li>
+              <li><a href="#"><img src="images/icon-mfyy.png" alt="免费云油"><p>免费运油</p></a></li>
+              <li><a href="#"><img src="images/icon-qcmr.png" alt="汽车美容"><p>汽车美容</p></a></li>
+              <li><a href="#"><img src="images/icon-cxdb.png" alt="车险代办"><p>车险代办</p></a></li>
+              <li><a href="#"><img src="images/icon-jptj.png" alt="精品推荐"><p>精品推荐</p></a></li>
+             </ul>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Pagination -->
+        <!--<div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>-->
+    </div>
+    <style>
+     .swiper-container {
+        width: 100%;
+        height: 9rem;
+    }
+    .swiper-slide {
+		 width:100%; height:100%;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+    }
+    .swiper-container .swiper-slide {
+        height: 9rem;
+    }
+    </style>
+    <script src="js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        autoHeight: true, //enable auto height
+    });
+    </script>
+ </div>
+ <!--图标:over-->
+ <!--三张广告图-->
+ <div class="ind-ads">
+  <div class="ads-img"><a href="#"><img src="images/pic-ad1.png" alt=""></a></div>
+  <div class="ads-img"><a href="#"><img src="images/pic-ad2.png" alt=""></a></div>
+  <div class="ads-img mg-b0"><a href="#"><img src="images/pic-ad3.png" alt=""></a></div>
+ </div>
+ <!--三张广告图:over-->
+ <!--服务列表-->
+ <div class="ind-fw1-div">
+ <div class="ind-fw1">
+  <div class="fw1">
+   <a href="#">
+    <div class="fw1-img"><span></span><img src="images/fw-tcfw.png"></div>
+    <div class="fw1-div">
+     <h3>拖车服务</h3><p>最快捷 最安全</p>
+    </div>
+   </a>
+  </div>
+  <div class="fw2">
+   <a href="#">
+    <div class="fw2-img"><span></span><img src="images/fw-bxgm.png"></div>
+    <div class="fw2-div">
+     <h3>接送服务</h3><p>真正的服务到家</p>
+    </div>
+   </a>
+  </div>
+  <div class="fw2">
+   <a href="#">
+    <div class="fw2-img"><span></span><img src="images/fw-dbwz.png"></div>
+    <div class="fw2-div">
+     <h3>代办违章</h3><p>省时省力好帮手</p>
+    </div>
+   </a>
+  </div>
+ </div>
+ </div>
+ <div class="ind-fw2">
+  <ul>
+    <li>
+     <a href="#">
+      <div class="fw-img"><span></span><img src="images/fw-qcpj.png"></div>
+      <div class="fw-div">
+       <h3>汽车配件</h3><p>好又多</p>
+      </div>
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      <div class="fw-img"><span></span><img src="images/fw-yhxc.png"></div>
+      <div class="fw-div">
+       <h3>优惠洗车</h3><p>闪闪发光的体验</p>
+      </div>
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      <div class="fw-img"><span></span><img src="images/fw-qczh.png"></div>
+      <div class="fw-div">
+       <h3>汽车装潢</h3><p>至尊品味</p>
+      </div>
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      <div class="fw-img"><span></span><img src="images/fw-bxgm.png"></div>
+      <div class="fw-div">
+       <h3>保险购买</h3><p>低至5折+10%优惠</p>
+      </div>
+     </a>
+    </li>
+  </ul>
+ </div>
+ <div class="ind-fw2">
+  <ul>
+    <li>
+     <a href="#">
+      <div class="fw-img"><span></span><img src="images/fw-qcyh.png"></div>
+      <div class="fw-div">
+       <h3>汽车养护</h3><p>天天送豪礼</p>
+      </div>
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      <div class="fw-img"><span></span><img src="images/fw-fwzq.png"></div>
+      <div class="fw-div">
+       <h3>服务专区</h3><p>马上上路吧</p>
+      </div>
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      <div class="fw-img"><span></span><img src="images/fw-escmm.png"></div>
+      <div class="fw-div">
+       <h3>二手车买卖</h3><p>你需要的我有</p>
+      </div>
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      <div class="fw-img"><span></span><img src="images/fw-qcwx.png"></div>
+      <div class="fw-div">
+       <h3>汽车维修</h3><p>最专业的服务</p>
+      </div>
+     </a>
+    </li>
+  </ul>
+ </div> 
+ <div class="div-space"></div>
+ <!--服务列表:over-->
+ <!--底部悬浮--> 
+ <div class="tool-h"></div>
+ <div class="tool">
+  <ul>
+   <li>
+    <a href="index.html" class="active">
+     <div class="tool-iconfont">&#xe648;</div>
+     <h3>首页</h3>
+    </a>
+   </li>
+   <li>
+    <a href="category.html">
+     <div class="tool-iconfont">&#xe641;</div>
+     <h3>分类</h3>
+    </a>
+   </li>
+   <li>
+    <a href="stores.html">
+     <div class="tool-iconfont">&#xe65e;</div>
+     <h3>附近门店</h3>
+    </a>
+   </li>
+   <li>
+    <a href="cart.html">
+     <div class="tool-iconfont">&#xe61a;</div>
+     <h3>购物车</h3>
+    </a>
+   </li>
+   <li>
+    <a href="user-center.html">
+     <div class="tool-iconfont">&#xe644;</div>
+     <h3>我</h3>
+     <span style="display:block;"></span>
+    </a>
+   </li>
+  </ul>
+ </div>
+ <!--底部悬浮:over-->
+  
+</body>
+</html>

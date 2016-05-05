@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tabBox { width: 100%; overflow: hidden; margin:0.25rem 0; background-color:#fff;}
+.tabBox .hd { width: 100%; height: 1.9rem; border-bottom: 1px solid #dddddd; background-color: #fff; }
+.tabBox .hd ul { width: 105%; }
+.tabBox .hd ul li { width: 33%; height: 1.9rem; display: block; float: left; }
+.tabBox .hd ul li a { width: 99%; height: 1.2rem; display: block; text-align: center; line-height: 1.2rem; margin: 0.35rem 0; border-right: 1px #ddd solid; font-size: 0.6rem; color: #333; }
+.tabBox .hd ul li.on { height: 1.9rem; border-bottom: 0.1rem #009ad9 solid; }
+.tabBox .hd ul li.on a { color: #009ad9; }
+.tabBox .bd { width: 100%; }
+.tabBox .bd ul { width: 100%; }
+.tabBox .bd ul li { width: 100%; display: block; overflow: hidden; margin: 0.5rem 0 1rem; -moz-box-shadow: 0 2px 5px #dddddd; -webkit-box-shadow: 0 2px 5px #dddddd; box-shadow: 0 2px 5px #dddddd; }
+.tabBox .bd ul li .list-img { width: 100%; overflow: hidden; }
+.tabBox .bd ul li .list-img img { width: 100%; display: block; }
+.tabBox .bd ul li .list-title { padding: 0.2rem 0.5rem; }
+.tabBox .bd ul li .list-title a { font-size: 0.875rem; color: #5c5c5c; line-height: 1.2rem; }
+.tabBox .bd ul li .list-info { width: 100%; padding: 0.2rem 0 0.8rem; overflow: hidden; background-color: #fff; }
+.tabBox .bd ul li .list-info-left { float: left; font-size: 0.8rem; color: #9c9c9c; padding-left: 0.8rem; }
+.tabBox .bd ul li .list-info-left span { font-size: 1.2rem; color: #eb7629; padding-right: 0.3rem; }
+.tabBox .bd ul li .list-info-right { float: right; font-size: 0.8rem; color: #9c9c9c; padding-right: 0.8rem; text-align: right; }
+.tabBox .bd ul li .list-info-right img { height: 1rem; vertical-align: middle; margin: 0 0.3rem 0.2rem; }
+.tabBox .bd ul li .list-info-right span { color: #6dbc69; }
+.tabBox .bd ul li .list-info-right label { font-size: 1rem; color: #b4b4b4; padding: 0 0.5rem; }
+

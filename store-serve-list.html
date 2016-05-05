@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>汽车商城</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link href="css/global.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/tabs.js"></script>
+</head>
+
+<body class="bc-f0f0f0">
+<!--顶部-->
+<div class="com-header">
+  <div class="return"><a href="javascript:history.go(-1)"><i class="iconfont">&#xe624;</i></a></div>
+  <div class="header-title">汽车服务</div>
+</div>
+<div class="header-h"></div>
+<!--顶部:over--> 
+<!--搜索-->
+<div class="store-serve-search">
+ <form action="" method="">
+  <div class="serve-white"><i class="icon">&#xe649;</i>
+   <input type="text" class="serve-txt" placeholder="请输入服务名称……">
+  </div>
+  <input type="submit" class="serve-btn" value="搜索">
+ </form>
+</div>
+<!--搜索:over-->
+<!--汽车服务-->
+<div class="store-serve">
+  <div class="store-serve-bottom">
+    <ul>
+      <li>
+   		  <section>
+      	<h3>普通洗车服务</h3>
+      	<p>整车泡沫冲洗，轮胎冲洗，车内吸尘，内饰简单清洁除尘。</p>
+      	<span>￥20.00</span>
+     		</section>
+     		<a href="javascript:;" class="a1" onclick="change_show()">购买</a>
+     		<a href="javascript:;" class="a2" onclick="change_show2()">议价</a>
+    	</li>  
+    	<li>
+   		  <section>
+      	<h3>普通洗车服务</h3>
+      	<p>整车泡沫冲洗，轮胎冲洗，车内吸尘，内饰简单清洁除尘。</p>
+      	<span>￥20.00</span>
+     		</section>
+     		<a href="javascript:;" class="a1" onclick="change_show()">购买</a>
+     		<a href="javascript:;" class="a2" onclick="change_show2()">议价</a>
+    	</li>  
+    	<li>
+   		  <section>
+      	<h3>普通洗车服务</h3>
+      	<p>整车泡沫冲洗，轮胎冲洗，车内吸尘，内饰简单清洁除尘。</p>
+      	<span>￥20.00</span>
+     		</section>
+     		<a href="javascript:;" class="a1" onclick="change_show()">购买</a>
+     		<a href="javascript:;" class="a2" onclick="change_show2()">议价</a>
+    	</li>  
+    	<li>
+   		  <section>
+      	<h3>普通洗车服务</h3>
+      	<p>整车泡沫冲洗，轮胎冲洗，车内吸尘，内饰简单清洁除尘。</p>
+      	<span>￥20.00</span>
+     		</section>
+     		<a href="javascript:;" class="a1" onclick="change_show()">购买</a>
+     		<a href="javascript:;" class="a2" onclick="change_show2()">议价</a>
+    	</li>  
+    	<li>
+   		  <section>
+      	<h3>普通洗车服务</h3>
+      	<p>整车泡沫冲洗，轮胎冲洗，车内吸尘，内饰简单清洁除尘。</p>
+      	<span>￥20.00</span>
+     		</section>
+     		<a href="javascript:;" class="a1" onclick="change_show()">购买</a>
+     		<a href="javascript:;" class="a2" onclick="change_show2()">议价</a>
+    	</li>  
+    	<li>
+   		  <section>
+      	<h3>普通洗车服务</h3>
+      	<p>整车泡沫冲洗，轮胎冲洗，车内吸尘，内饰简单清洁除尘。</p>
+      	<span>￥20.00</span>
+     		</section>
+     		<a href="javascript:;" class="a1" onclick="change_show()">购买</a>
+     		<a href="javascript:;" class="a2" onclick="change_show2()">议价</a>
+    	</li>  
+    </ul>
+  </div>
+</div>
+<!--汽车服务:over-->
+
+ <!--购买弹窗-->
+ <div class="change-dialog" id="change-light">
+  <div class="change-dialog-top">
+   <h3>兑换码：<strong>AXS123456</strong></h3>
+   <p>(请向店员展示您的兑换码)</p>
+  </div>
+  <div class="change-dialog-bottom">
+   <input type="button" class="btn-no" value="取消" onClick="change_hide()">
+   <input type="button" class="btn-ok" value="确定" >
+  </div>
+ </div>
+ <div class="black" id="change-fade"></div>
+ 
+ <div class="change-dialog" id="change-light2">
+  <div class="change-dialog-top">
+   <input type="text" class="price-txt" placeholder="请输入价格" />
+  </div>
+  <div class="change-dialog-bottom">
+   <input type="button" class="btn-no" value="取消" onClick="change_hide2()">
+   <input type="button" class="btn-ok" value="提交" >
+  </div>
+ </div>
+ <div class="black" id="change-fade2"></div>
+ <script>
+  var id_light = document.getElementById('change-light');
+  var id_black = document.getElementById('change-fade');
+  function change_show(){
+	   id_light.style.display='block';
+	   id_black.style.display='block';
+	  }
+  function change_hide(){
+	   id_light.style.display='none';
+	   id_black.style.display='none';
+	  }
+  var id_light2 = document.getElementById('change-light2');
+  var id_black2 = document.getElementById('change-fade2');
+  function change_show2(){
+	   id_light2.style.display='block';
+	   id_black2.style.display='block';
+	  }
+  function change_hide2(){
+	   id_light2.style.display='none';
+	   id_black2.style.display='none';
+	  }
+ </script>
+ <!--购买弹窗:over-->
+
+</body>
+</html>
